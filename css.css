@@ -1,0 +1,12 @@
+/** Regra CSS
+
+seletor { propriedade1:valor;
+          propriedade2:valor;
+          propriedade3:valor;
+}
+*/
+
+h1{
+    color:red;
+}
+p{color: darkgray;}
