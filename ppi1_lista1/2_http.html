@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Protocolo HTTP</title>
+</head>
+
+<body>
+
+    <h1>O que é o protocolo HTTP?</h1>
+
+    <p>
+        O HTTP (HyperText Transfer Protocol) é o protocolo responsável pela comunicação entre o
+        navegador e os servidores da internet. Sempre que você acessa um site, o navegador envia
+        uma requisição HTTP para o servidor e o servidor responde enviando a página solicitada.
+    </p>
+
+    <hr>
+
+    <h2>Como o HTTP funciona na Web</h2>
+
+    <p>
+        Quando digitamos um endereço como <b>www.google.com</b>, o navegador envia um pedido
+        para o servidor. Esse pedido é chamado de <b>request</b>. O servidor recebe esse pedido
+        e envia uma resposta chamada <b>response</b>, que normalmente é uma página HTML.
+    </p>
+
+    <img src="../http.png" width="500">
+
+    <p><i>Imagem mostrando a comunicação entre cliente e servidor usando HTTP.</i></p>
+
+    <hr>
+
+    <h2>Exemplo de uma requisição HTTP</h2>
+
+    <p>Exemplo de request enviado pelo navegador:</p>
+
+    <pre>
+GET /index.html HTTP/1.1
+Host: www.site.com
+User-Agent: Chrome
+Accept: text/html
+    </pre>
+
+    <h3>Explicação dos campos</h3>
+
+    <ul>
+        <li><b>GET</b> → tipo de requisição</li>
+        <li><b>/index.html</b> → página solicitada</li>
+        <li><b>HTTP/1.1</b> → versão do protocolo</li>
+        <li><b>Host</b> → endereço do site</li>
+        <li><b>User-Agent</b> → navegador utilizado</li>
+        <li><b>Accept</b> → tipo de conteúdo que o navegador aceita</li>
+    </ul>
+
+    <hr>
+
+    <h2>Exemplo de resposta do servidor (Response)</h2>
+
+    <pre>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 1200
+
+<html>
+    <head>
+        <title>Página inicial</title>
+    </head>
+    <body>
+        Bem-vindo ao site!
+    </body>
+</html>
+    </pre>
+
+    <h3>Explicação dos campos do response</h3>
+
+    <ul>
+        <li><b>HTTP/1.1 200 OK</b> → resposta do servidor (200 = deu certo)</li>
+        <li><b>Content-Type</b> → tipo do conteúdo enviado</li>
+        <li><b>Content-Length</b> → tamanho da resposta</li>
+        <li><b>HTML</b> → página enviada para o navegador</li>
+    </ul>
+
+</body>
+</html>

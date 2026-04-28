@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barquinho com Emoji</title>
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    height:100vh;
+    background: linear-gradient(#cce7ff, #87ceeb); /* céu */
+}
+
+/* MAR */
+.mar{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:40%;
+    background:#3f51b5;
+    z-index:1;
+}
+
+/* BARCO (emoji) */
+.barco{
+    position: fixed;
+    bottom:40%;
+    left:0;
+    font-size:60px;
+    z-index:1;
+
+    animation: moverBarco 8s linear infinite,
+               balanco 2s ease-in-out infinite;
+}
+
+/* movimento horizontal */
+@keyframes moverBarco{
+    0%{ left:-100px; }
+    100%{ left:100%; }
+}
+
+/* balanço */
+@keyframes balanco{
+    0%{ transform: rotate(-5deg); }
+    50%{ transform: rotate(5deg); }
+    100%{ transform: rotate(-5deg); }
+}
+
+/* NUVEM (emoji) */
+.nuvem{
+    position:absolute;
+    top:50px;
+    left:-200px;
+    font-size:50px;
+    animation: moverNuvem 20s linear infinite;
+}
+
+/* nuvem atravessando */
+@keyframes moverNuvem{
+    0%{ left:-200px; }
+    100%{ left:100%; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nuvem">☁️☁️</div>
+<div class="mar"></div>
+<div class="barco">⛵</div>
+
+</body>
+</html>

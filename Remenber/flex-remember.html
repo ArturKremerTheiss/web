@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>remembering this shit</title>
+
+
+
+    <style>
+
+        #box-div-4{position: relative; left:50px;top: -30px;}
+        .container{
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            justify-content: space-around;/*controla exibição*/
+            align-items: center;/* eixo perpenticular ao flex*/
+        }
+        .box{background-color: rgb(100, 100, 100);
+        border: 1px solid orange;
+        flex-grow: 1;
+        }
+        .box:hover{flex-grow: 5;
+            transition: all 5s;
+        }
+
+
+        #box-div-1{order: 5;}
+        #box-div-2{order: 4;}
+        #box-div-3{order: 4;}
+        
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <span class="box" id="box-div-1">1</span>
+        <span class="box" id="box-div-2">2</span>
+        <span class="box" id="box-div-3">3</span>
+        <span class="box" id="box-div-4">4</span>
+        <span class="box" id="box-div-5">5</span>
+    </div>
+    
+    <div class="container">
+        <div class="box" id="box-span-1">1</div>
+        <div class="box" id="box-span-2">2</div>
+        <div class="box" id="box-span-3">3</div>
+        <div class="box" id="box-span-4">4</div>
+        <div class="box" id="box-span-5">5</div>
+    </div>
+
+</body>
+</html>

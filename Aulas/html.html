@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>HTML</title>
+        <meta charset="utf-8">
+        <style>
+            p>span{ color:#AA2211}
+            table,td,caption
+            {border:2px solid #1d39d8; border-collapse: collapse; }
+
+           
+           
+           
+           
+            #xurras tr:nth-child(2n){
+                background-color: #fc1d00;
+                font-size: 2em;
+
+            }
+            #xurras td:hover{
+                background-color: gold;
+                transition: linear 0.5s;
+
+            }
+
+            #xurras caption{
+                border-radius: 10px 10px 0px 0px;
+            }
+
+
+            /** #RRGGBBAA **/
+            /** #00->ff **/
+            /** #0000ff **/
+            /** #0000FFAA **/
+
+            #card{
+                border: 1xp solid black;
+                box-shadow: 10xp 2xp gray;
+                display:  inline-block;
+            }
+            #card h2{
+                display: inline-block;
+            }
+            #card #pokemon{
+                width: 50px;;
+            }
+            #card #cachorro{
+                width: 300px;
+                display: block;
+                margin: 10px;
+            }
+
+        </style>
+
+        
+        <!--isso é um comentario em HTML-->
+    </head>  
+        <body> 
+            <!--Fazendo SPAN -->
+            <span> SPAN !</span>
+            <h1>
+                Olá 
+            </h1>
+            <hr><!-- ADICIONA UMA LINHA QUALQUER ABAIXO-->
+            <!--paragrafo-->
+           
+            <p> Isso é um paragrafo fiote</p>
+            <p> Isso é um paragrafo,<span> dele podemos ter ter texto em <b>negrito</b></span></p>
+            <h1> Isso é um título de nível 1</h1>
+            <h2> Isso é um título de nível 2</h1>
+            <h3> Isso é um título de nível 3</h1>
+            <h4> Isso é um título de nível 4</h1>
+            <h5> Isso é um título de nível 5</h5>
+            <h6> Isso é um título de nível 6</h6>
+            <hr>
+            <p>Lorem ipsum<br> dolor sit amet consectetur adipisicing elit. Porro ipsa praesentium deserunt modi <mark>necessitatibus</mark><br>in unde eaque beatae facilis quam. Aut consectetur <small>iusto illum impedit eveniet</small> optio? Quis, autem mollitia?</p>
+
+            <p><pre>
+            caiu
+            caiu
+            caiu
+
+             </pre>
+             </p>
+             <pre><!--Serve para dar espaço no texto  --> </pre>
+
+             <pre>
+             <h2> Código Fonte  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<!-- para dar mais espaço--> Hello em C</h2>
+                
+             #include &ltstdio.h&gt
+            int main() {
+                printf("Hello, World!\n");
+                return 0;
+            }
+            
+            
+            </pre>
+            
+            <hr>
+            <p> Lista de Compras para o churrasco </p>
+            <ul>
+            <li> Energetico</li>
+            <li> Vodka</li>
+            <li> Carne</li>
+            <li> Carvão</li>
+            <li> Cachaça</li>
+            <li> Campari</li>
+            <li> Cerveja</li>
+            <li> Pão de alho</li>
+            <li> Domino ou cacheta</li>
+            </ul>
+            
+            <h2> Lista NÃO ordenada </h2>
+            <ul>
+                <li> Água</li>
+                <li> Café</li>
+                <li> Leite</li>
+        </ul>
+
+        <h2> Lista Ordenada</h2>
+        <ol>
+        <li> Água</li>
+        <li> Refrigerante</li>
+        </ol>
+
+        <h2>Lita Definida</h2>
+        <dl>
+            <dt> Café</dt>
+        
+        <img src="./download.jpg" alt="">
+
+       <hr>
+       
+        <table id="xurras">
+            <caption>Lista de compras</caption>
+            <tr> Itens </tr>
+            <tr> classificação </tr>
+            <tr> descrição </tr>
+            <tr> quantidade </tr>
+            <tr> valor </tr>
+            <tr> subtotal </tr>
+            <tr>
+                <td>1 </td>
+                <td rowspan="3" colspan="1">comidas</td>
+                <td>Carne</td>
+                <td>6</td>
+                <td>40</td>
+                <td>240</td>
+                </tr>
+                
+                <tr>
+                
+                    <td>2</td>
+                    <td>Franguinho</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>30</td>                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>pão de alho</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>bebidas</td>
+                        <td>cerveja</td>
+                        <td>20</td>
+                        <td>5</td>                        
+                        <td>100</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>bebidas</td>
+                            <td>água c/gas</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>bebidas</td>
+                                <td>refri</td>
+                                <td>5</td>
+                                <td>8</td>
+                                <td>40</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>7</td>
+                                    <td>outros</td>
+                                    <td>copos</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                    <td>8</td>
+                                    
+                                    </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>outros</td>
+                                            <td>guardanapos</td>
+                                            <td>1</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>outros</td>
+                                                    <td>carvão</td>
+                                                    <td>1</td>
+                                                    <td>32</td>
+                                                    <td>32</td>
+                                                    </tr>
+
+            
+            
+            </table>
+
+            <h1>Container</h1>
+        <div id = "card"> 
+            <img id = "cachorro" src="cachorrinho.jpg" alt="">
+            <h2> Dale</h2>
+            <img id="pokemon"src="./download.jpg" alt="">
+
+
+
+
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Saving</th>    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 100</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$ 200</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>R$ 300</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <h2> Formularios e Inputs</h2>
+        <a href=""></a>
+        <form action=" ">
+
+            <h2 id="ExemploForm"> Exemplo</h2>
+            <form action="">
+
+            <label for="nome"> Informe seu nome feio</label><br>
+            <input id=""type="text"><br><br>
+            
+            <input type="color"><br><br>
+            <input type="date"><br><br>
+            <input type="datetime"><br><br>
+            <input type="file"><br><br>
+            <input  type="number"><br><br>
+            <input type="checkbox" name="" id=""><br><br>
+            <input type="radio" name="" id=""><br><br>
+            <input type="range"><br><br>
+
+            <input type="submit" value="submit">
+            <button>Pesquisa</button>
+            </form>
+            <button> Botão</button>
+
+            <form action="https://google.com/search" method="get">
+
+                <label for="chave"> Informe sua busca</label>
+               <input type="text" name="q" id="chave">
+                <input type="submit" value="pesquisa">
+
+
+        </form>
+            
+            
+        
+        
+        
+        
+        
+        </body>
+    
+</html> 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagens com efeitos 
+    </title>
+    <style>
+        .container {
+            display: flex;
+            height: 400px;
+            width: 90%;
+            margin: 50px auto;
+            gap: 15px; 
+        }
+
+        .box {
+            flex: 1;
+            transition: all 0.5s ease; 
+            border-radius: 50px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .box:hover {
+            flex: 5; 
+        }
+
+        .conteudo {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            opacity: 0; 
+            transition: opacity 0.3s ease;
+            pointer-events: none; 
+        }
+
+        
+        .box:hover .conteudo {
+            opacity: 1;
+        }
+
+        
+        .img1 { background-image: url('imagens/bugatti.jpg'); }   
+        .img2 { background-image: url('imagens/carro2.jpg'); }
+        .img3 { background-image: url('imagens/carro3.jpg'); }
+        .img4 { background-image: url('imagens/carro4.jpg'); }
+        .img5 { background-image: url('imagens/carro5.jpg'); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box img1">
+            <div class="conteudo"><h3>Bugatti</h3></div>
+        </div>
+        <div class="box img2">
+            <div class="conteudo"><h3>Koenigsegg</h3></div>
+        </div>
+        <div class="box img3">
+            <div class="conteudo"><h3>Ferrari</h3></div>
+        </div>
+        <div class="box img4">
+            <div class="conteudo"><h3>McLaren</h3></div>
+        </div>
+        <div class="box img5">
+            <div class="conteudo"><h3>Lamborghini Aventador SVJ</h3></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Estilo geral da página */
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Links */
+a {
+    color: #1d39d8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #1d39d8;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #dfe6e9;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+}
+
+input, select, textarea {
+    width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Botão */
+button {
+    background-color: #1d39d8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Imagem */
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Divs */
+div {
+    margin-bottom: 15px;
+}

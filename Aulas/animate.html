@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacao</title>
+
+    <style>
+        #coracao{
+            font: size 100px;
+            animation: voar 1s linear 0s infinite;
+        }
+
+        img{width: 30vw;
+        animation:voar 1s linear infinite;}
+        @keyframes voar {
+            0%{font-size: 1px;
+            transform: rotate(0deg);}
+
+            100%{transform: rotate(360deg);}
+            
+        }
+        #rocket{
+            display: inline-block;
+            position:fixed;
+            font-size: 20pt;
+            bottom: 0px;
+            left: 0px;
+            transform: rotate(-45deg);
+            animation: lancamento 2s ease-in infinite;
+        }
+        @keyframes lancamento { 
+            from{}
+            
+        
+        to{
+            bottom: 100vh;
+            left: 0px;
+        }
+    }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <img src="Imagens/dogdog.png" alt="">
+    <span id="coracao">❤️</span>
+    <span id="rocket">🚀</span>
+</body>
+</html>
