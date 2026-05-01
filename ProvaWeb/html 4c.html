@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Centralização Position</title>
+    <style>
+        body {
+            background-color: #27ae60; /* Fundo colorido */
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+        .foguete {
+            font-size: 80px;
+            position: absolute; /* Posicionamento absoluto em relação ao body */
+            top: 50%;
+            left: 50%;
+            /* O transform move o elemento de volta metade do seu próprio tamanho */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="foguete">🚀</div>
+</body>
+</html>

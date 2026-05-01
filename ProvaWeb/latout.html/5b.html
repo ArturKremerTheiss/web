@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5b - Responsivo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: 15px;
+            background-color: #fafafa;
+            display: grid;
+            gap: 15px;
+            
+            /* Por padrao (mobile), uma coluna só que ocupa tudo */
+            grid-template-columns: 1fr;
+        }
+
+        .item-grade {
+            min-height: 140px;
+            border-radius: 10px;
+        }
+
+        /* Cores base */
+        .c-laranja { background-color: #f39c12; }
+        .c-cinza   { background-color: #bdc3c7; }
+        .c-rosa    { background-color: #f1948a; }
+        .c-claro   { background-color: #d5dbdb; }
+        .c-verde   { background-color: #abb2b9; }
+        .c-amarelo { background-color: #f1c40f; }
+
+        .container-bolas {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .bola {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* MEDIA QUERY: Quando a tela for maior que 600px, monta o grid */
+        @media (min-width: 600px) {
+            
+            body {
+                height: 100vh;
+                grid-template-columns: 1.5fr 1fr 1fr 80px;
+                grid-template-rows: 1fr 1fr 80px;
+            }
+
+            .c-laranja { grid-column: 1; grid-row: 1; }
+            
+            .c-cinza   { grid-column: 1; grid-row: 2; }
+            
+            .c-rosa    { grid-column: 2; grid-row: 1 / span 2; }
+            
+            .c-claro   { grid-column: 3 / span 2; grid-row: 1; }
+            
+            .c-verde   { grid-column: 3; grid-row: 2 / span 2; }
+            
+            .c-amarelo { grid-column: 1 / span 2; grid-row: 3; }
+
+            .container-bolas {
+                grid-column: 4;
+                grid-row: 2 / span 2;
+                flex-direction: column; /* Bolinhas ficam em pé no PC */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="item-grade c-laranja"></div>
+    
+    <div class="item-grade c-cinza"></div>
+    
+    <div class="item-grade c-rosa"></div>
+    
+    <div class="item-grade c-claro"></div>
+    
+    <div class="item-grade c-verde"></div>
+    
+    <div class="item-grade c-amarelo"></div>
+
+    <div class="container-bolas">
+        <div class="bola" style="background-color: #e67e22;"></div>
+        <div class="bola" style="background-color: #d98880;"></div>
+        <div class="bola" style="background-color: #a9dfbf;"></div>
+        <div class="bola" style="background-color: #d7bde2;"></div>
+    </div>
+
+</body>
+</html>

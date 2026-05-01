@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 5a - Desktop</title>
+
+    <style>
+        /* Limpando as margens padrao do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            padding: 12px;
+            background-color: #f0f0f0;
+
+            /* Configurando o Grid principal */
+            display: grid;
+            gap: 10px;
+            
+            /* Colunas: a primeira eh maior, a ultima eh estreita pros circulos */
+            grid-template-columns: 1.5fr 1fr 1fr 70px;
+            grid-template-rows: 1fr 1fr 75px;
+        }
+
+        /* Estilo base de cada quadrado */
+        .caixa {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Posicionamento de cada item conforme o desenho */
+        
+        .bloco-laranja {
+            background-color: #f39c12;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .bloco-cinza {
+            background-color: #bdc3c7;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .bloco-rosa {
+            background-color: #f1948a;
+            grid-column: 2;
+            grid-row: 1 / span 2; /* Ocupa duas linhas */
+        }
+
+        .bloco-topo-claro {
+            background-color: #d5dbdb;
+            grid-column: 3 / span 2; /* Ocupa duas colunas */
+            grid-row: 1;
+        }
+
+        .bloco-verde {
+            background-color: #abb2b9;
+            grid-column: 3;
+            grid-row: 2 / span 2;
+        }
+
+        .bloco-amarelo {
+            background-color: #f1c40f;
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        /* Lado direito onde ficam os circulos */
+        .coluna-bolinhas {
+            grid-column: 4;
+            grid-row: 2 / span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa bloco-laranja"></div>
+    
+    <div class="caixa bloco-cinza"></div>
+    
+    <div class="caixa bloco-rosa"></div>
+    
+    <div class="caixa bloco-topo-claro"></div>
+    
+    <div class="caixa bloco-verde"></div>
+    
+    <div class="caixa bloco-amarelo"></div>
+
+    <div class="coluna-bolinhas">
+        <div class="circulo" style="background-color: #e67e22;"></div>
+        <div class="circulo" style="background-color: #d98880;"></div>
+        <div class="circulo" style="background-color: #a9dfbf;"></div>
+        <div class="circulo" style="background-color: #d7bde2;"></div>
+    </div>
+
+</body>
+</html>
