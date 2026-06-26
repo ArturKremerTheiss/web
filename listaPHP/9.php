@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Polindro</h1>
+
+    <form method = "GET" action="">
+        <label for="texto" id="texto" name="texto" required>
+        i
+        <button type="submit">Calcular</button>
+</form>
+
+</body>
+</html>
